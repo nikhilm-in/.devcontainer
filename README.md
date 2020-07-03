@@ -1,6 +1,6 @@
-# Dev Container #
+# Devcontainer #
 
-Dev Container is a concept and a feature of VS Code which uses a container as a remote development environment. 
+Devcontainer is a concept and a feature of VS Code which uses a container as a remote development environment. 
 
 The entire remote development environment is defined as a `Dockerfile` along with a `devcontainer.json` under the `.devcontainer` directory in your git project and VS Code automatically recognizes it and volume mounts the project inside a container from the defined docker image.
 

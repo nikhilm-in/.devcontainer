@@ -14,8 +14,8 @@ Read more about using [devcontainers](https://code.visualstudio.com/docs/remote/
 * Same dependencies irrespective of the host OS. Just need to install VS Code and Docker which is available for all OS and architecture (VS Code ARM support in beta, Docker already works.)
 
 ## Requirements ##
-* [Docker](https://www.docker.com/get-started)
-* [VS Code](https://code.visualstudio.com/download) **Note**: docker compose may also be needed.
+* [Docker](https://www.docker.com/get-started) **Note**: docker compose may also be needed.
+* [VS Code](https://code.visualstudio.com/download)
 * [Remote development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## Usage ##

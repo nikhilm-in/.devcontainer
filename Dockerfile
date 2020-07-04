@@ -25,4 +25,7 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir ~/.ssh && echo "StrictHostKeyChecking no" >> ~/.ssh/config && ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+RUN mkdir ~/.ssh && echo "StrictHostKeyChecking no" >> ~/.ssh/config && ssh-keyscan github.com >> ~/.ssh/known_hosts
+
 RUN if [ ! -d "/docker-java-home" ]; then ln -s "${JAVA_HOME}" /docker-java-home; fi

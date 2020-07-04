@@ -24,5 +24,5 @@ When creating a new project, git clone the specific branch that contains the lan
 It will create a directory called .devcontainer with the relevant Dockerfile and devcontainer.json file. Modify it to the use case by going through the [devcontainers quick start](https://code.visualstudio.com/docs/remote/containers) page or the [devcontainer advanced configuration](https://code.visualstudio.com/docs/remote/containers-advanced) page.
 
 ### Devcontainer templates for different languages ###
-* [Java-8](https://bitbucket.org/wicked-ride/.devcontainer/src/java-8/): `git clone --single-branch --branch java-8 git@bitbucket.org:wicked-ride/.devcontainer.git`
-* [python-3.8](https://bitbucket.org/wicked-ride/.devcontainer/src/python-3.8/): `git clone --single-branch --branch python-3.8 git@bitbucket.org:wicked-ride/.devcontainer.git`
+* [Java-8](https://bitbucket.org/wicked-ride/.devcontainer/src/java-8/): `git clone --single-branch --branch java-8 git@bitbucket.org:wicked-ride/.devcontainer.git  && rm -rf .devcontainer/.git`
+* [python-3.8](https://bitbucket.org/wicked-ride/.devcontainer/src/python-3.8/): `git clone --single-branch --branch python-3.8 git@bitbucket.org:wicked-ride/.devcontainer.git && rm -rf .devcontainer/.git`

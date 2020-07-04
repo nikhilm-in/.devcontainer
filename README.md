@@ -24,3 +24,4 @@ It will create a directory called .devcontainer with the relevant Dockerfile and
 
 ### Devcontainer templates for different languages ###
 * [Java-8](https://bitbucket.org/wicked-ride/.devcontainer/src/java-8/): `git clone --single-branch --branch java-8 git@bitbucket.org:wicked-ride/.devcontainer.git`
+* [python-3.8](https://bitbucket.org/wicked-ride/.devcontainer/src/python-3.8/): `git clone --single-branch --branch python-3.8 git@bitbucket.org:wicked-ride/.devcontainer.git`

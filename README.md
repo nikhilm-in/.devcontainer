@@ -1,8 +1,8 @@
 # Devcontainer #
 
-Devcontainer is a concept and a feature of VS Code which uses a container as a remote development environment. 
+Devcontainer is a concept of using containers as remote development environment. It is a feature for VS Code. Unsure if other IDE support it. 
 
-The entire remote development environment is defined as a `Dockerfile` or a `docker-compose.yml` along with a `devcontainer.json` under the `.devcontainer` directory in your git project and VS Code automatically recognizes it and volume mounts the project inside a container from the defined docker image.
+The entire remote development environment is defined as a `Dockerfile` or a `docker-compose.yml` along with a `devcontainer.json` file under the `.devcontainer` directory in a git project and VS Code automatically recognizes it and volume mounts the project inside a container from the defined docker image.
 
 Read more about using [devcontainers](https://code.visualstudio.com/docs/remote/containers) on VS Code here
 
@@ -10,17 +10,18 @@ Read more about using [devcontainers](https://code.visualstudio.com/docs/remote/
 * No further installation and setup needed other than the requirements shown below for anyone picking up the same project. 
 * Development environment is isolated and immutable. Easier to work on projects with conflicting dependencies and libraries at the same time. Using devcontainer is also lighter than running any another form of isolation like virtual machines.
 * The development environment is defined as code and checked in to the repo with the rest of infrastructure as code files.
-* You can even define the dependant services in a compose file and use one of the service from it as your devcontainer.
+* Supports defining the dependant services in a compose file and use one of the service from it as the devcontainer.
+* Same dependencies irrespective of the host OS. Just need to install VS Code and Docker which is available for all OS and architecture (VS Code ARM support in beta, Docker already works.)
 
 ## Requirements ##
 * [Docker](https://www.docker.com/get-started)
-* [VS Code](https://code.visualstudio.com/download) **Note**: You may even need docker compose
+* [VS Code](https://code.visualstudio.com/download) **Note**: docker compose may also be needed.
 * [Remote development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## Usage ##
-When creating a new project, git clone the specific branch that contains the language of your project using the command `git clone --single-branch --branch <branchname> git@bitbucket.org:wicked-ride/.devcontainer.git`
+When creating a new project, git clone the specific branch that contains the language of the project using the command `git clone --single-branch --branch <branchname> git@bitbucket.org:wicked-ride/.devcontainer.git`
 
-It will create a directory called .devcontainer with the relevant Dockerfile and devcontainer.json file. You can modify it to your use case by going through the [devcontainers quick start](https://code.visualstudio.com/docs/remote/containers) page or the [devcontainer advanced configuration](https://code.visualstudio.com/docs/remote/containers-advanced) page.
+It will create a directory called .devcontainer with the relevant Dockerfile and devcontainer.json file. Modify it to the use case by going through the [devcontainers quick start](https://code.visualstudio.com/docs/remote/containers) page or the [devcontainer advanced configuration](https://code.visualstudio.com/docs/remote/containers-advanced) page.
 
 ### Devcontainer templates for different languages ###
 * [Java-8](https://bitbucket.org/wicked-ride/.devcontainer/src/java-8/): `git clone --single-branch --branch java-8 git@bitbucket.org:wicked-ride/.devcontainer.git`

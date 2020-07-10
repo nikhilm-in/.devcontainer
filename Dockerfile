@@ -21,6 +21,5 @@ COPY requirements.txt /tmp/pip-tmp/
 RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
    && rm -rf /tmp/pip-tmp
 
-RUN mkdir ~/.ssh && echo "StrictHostKeyChecking no" >> ~/.ssh/config && ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
-RUN mkdir ~/.ssh && echo "StrictHostKeyChecking no" >> ~/.ssh/config && ssh-keyscan github.com >> ~/.ssh/known_hosts
+RUN mkdir ~/.ssh && echo "StrictHostKeyChecking no" >> ~/.ssh/config && ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts && ssh-keyscan github.com >> ~/.ssh/known_hosts
 

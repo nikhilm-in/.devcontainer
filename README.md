@@ -30,5 +30,5 @@ It will create a directory called .devcontainer with the relevant Dockerfile and
 
 ### Links ###
 * [devcontainers](https://code.visualstudio.com/docs/remote/containers)
-* [devcontainer advanced configuration](https://code.visualstudio.com/docs/remote/containers-advanced) page]
+* [devcontainer advanced configuration](https://code.visualstudio.com/docs/remote/containers-advanced)
 * [devcontaienr.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)

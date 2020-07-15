@@ -11,7 +11,7 @@ Read more about using [devcontainers](https://code.visualstudio.com/docs/remote/
 * Development environment is isolated and immutable. Easier to work on projects with conflicting dependencies and libraries at the same time. Using devcontainer is also lighter than running any another form of isolation like virtual machines.
 * The development environment is defined as code and checked in to the repo with the rest of infrastructure as code files.
 * Supports defining the dependant services in a compose file and use one of the service from it as the devcontainer.
-* Same dependencies irrespective of the host OS. Just need to install VS Code and Docker which is available for all OS and architecture (VS Code ARM support in beta, Docker already works.)
+* Same dependencies irrespective of the host OS. Just need to install VS Code and Docker which is available for all OS and architecture (VS Code Windows on ARM support is available,WIP for linux. Docker already works on ARM.)
 
 ## Requirements ##
 * [Docker](https://www.docker.com/get-started) **Note**: docker compose may also be needed.
